@@ -3,7 +3,7 @@
 # See LICENSE file in the repository root for full license text.
 
 from telethon import TelegramClient
-from config import API_ID, API_HASH, BOT_TOKEN
+from config import API_ID, API_HASH, BOT_TOKEN,STRING
 from pyrogram import Client
 import sys
 
@@ -25,5 +25,6 @@ async def start_client():
     await app.start()
     print("Pyro App Started...")
     return client, app, userbot
+
 
 
