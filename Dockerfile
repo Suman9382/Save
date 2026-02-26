@@ -6,6 +6,6 @@ COPY requirements.txt .
 RUN pip3 install wheel
 RUN pip3 install --no-cache-dir -U -r requirements.txt
 COPY . .
-EXPOSE 5000
+EXPOSE 8000
 
 CMD flask run -h 0.0.0.0 -p 8000 & python3 main.py
